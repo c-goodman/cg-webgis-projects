@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f4298f204c05490f946f9b90eda1b52f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.2/leaflet.draw.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.2/leaflet.draw.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f4298f204c05490f946f9b90eda1b52f" ></div>
+        
+    
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Draggable - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script>
+  $( function() {
+    $( "#maplegend" ).draggable({
+                    start: function (event, ui) {
+                        $(this).css({
+                            right: "auto",
+                            top: "auto",
+                            bottom: "auto"
+                        });
+                    }
+                });
+});
+
+  </script>
+</head>
+<body>
+
+
+<div id='maplegend' class='maplegend'
+    style='position: absolute; z-index:9999; border:2px solid grey; background-color:rgba(255, 255, 255, 0.8);
+     border-radius:6px; padding: 10px; font-size:14px; right: 20px; bottom: 20px;'>
+
+<div class='legend-title'>Legend</div>
+<div class='legend-scale'>
+  <ul class='legend-labels'>
+    <li><span style='background:#008837;opacity:1.0;'></span>Freshwater- Forested and Shrub wetland</li>
+    <li><span style='background:#7fc31c;opacity:1.0;'></span>Freshwater Emergent wetland</li>
+    <li><span style='background:#688cc0;opacity:1.0;'></span>Freshwater pond</li>
+    <li><span style='background:#66c2a5;opacity:1.0;'></span>Estuarine and Marine wetland</li>
+    <li><span style='background:#0190bf;opacity:1.0;'></span>Riverine</li>
+    <li><span style='background:#13007c;opacity:1.0;'></span>Lakes</li>
+    <li><span style='background:#007c88;opacity:1.0;'></span>Estuarine and Marine Deepwater</li>
+    <li><span style='background:#b28656;opacity:1.0;'></span>Other Freshwater wetland</li>
+  </ul>
+</div>
+</div>
+
+</body>
+</html>
+
+<style type='text/css'>
+  .maplegend .legend-title {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 90%;
+    }
+  .maplegend .legend-scale ul {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    float: left;
+    list-style: none;
+    }
+  .maplegend .legend-scale ul li {
+    font-size: 80%;
+    list-style: none;
+    margin-left: 0;
+    line-height: 18px;
+    margin-bottom: 2px;
+    }
+  .maplegend ul.legend-labels li span {
+    display: block;
+    float: left;
+    height: 16px;
+    width: 30px;
+    margin-right: 5px;
+    margin-left: 0;
+    border: 1px solid #999;
+    }
+  .maplegend .legend-source {
+    font-size: 80%;
+    color: #777;
+    clear: both;
+    }
+  .maplegend a {
+    color: #777;
+    }
+</style>
+    
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Draggable - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script>
+  $( function() {
+    $( "#maplegend" ).draggable({
+                    start: function (event, ui) {
+                        $(this).css({
+                            right: "auto",
+                            top: "auto",
+                            bottom: "auto"
+                        });
+                    }
+                });
+});
+
+  </script>
+</head>
+<body>
+
+
+<div id='maplegend' class='maplegend'
+    style='position: absolute; z-index:9999; border:2px solid grey; background-color:rgba(255, 255, 255, 0.8);
+     border-radius:6px; padding: 10px; font-size:14px; right: 20px; bottom: 20px;'>
+
+<div class='legend-title'>Legend</div>
+<div class='legend-scale'>
+  <ul class='legend-labels'>
+    <li><span style='background:#008837;opacity:1.0;'></span>Freshwater- Forested and Shrub wetland</li>
+    <li><span style='background:#7fc31c;opacity:1.0;'></span>Freshwater Emergent wetland</li>
+    <li><span style='background:#688cc0;opacity:1.0;'></span>Freshwater pond</li>
+    <li><span style='background:#66c2a5;opacity:1.0;'></span>Estuarine and Marine wetland</li>
+    <li><span style='background:#0190bf;opacity:1.0;'></span>Riverine</li>
+    <li><span style='background:#13007c;opacity:1.0;'></span>Lakes</li>
+    <li><span style='background:#007c88;opacity:1.0;'></span>Estuarine and Marine Deepwater</li>
+    <li><span style='background:#b28656;opacity:1.0;'></span>Other Freshwater wetland</li>
+  </ul>
+</div>
+</div>
+
+</body>
+</html>
+
+<style type='text/css'>
+  .maplegend .legend-title {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 90%;
+    }
+  .maplegend .legend-scale ul {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    float: left;
+    list-style: none;
+    }
+  .maplegend .legend-scale ul li {
+    font-size: 80%;
+    list-style: none;
+    margin-left: 0;
+    line-height: 18px;
+    margin-bottom: 2px;
+    }
+  .maplegend ul.legend-labels li span {
+    display: block;
+    float: left;
+    height: 16px;
+    width: 30px;
+    margin-right: 5px;
+    margin-left: 0;
+    border: 1px solid #999;
+    }
+  .maplegend .legend-source {
+    font-size: 80%;
+    color: #777;
+    clear: both;
+    }
+  .maplegend a {
+    color: #777;
+    }
+</style>
+</body>
+<script>    
+    
+            var map_f4298f204c05490f946f9b90eda1b52f = L.map(
+                "map_f4298f204c05490f946f9b90eda1b52f",
+                {
+                    center: [29.7452, -93.8833],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    drawExport: false,
+                    layersControl: true,
+                }
+            );
+            L.control.scale().addTo(map_f4298f204c05490f946f9b90eda1b52f);
+
+            
+
+        
+    
+            var tile_layer_f49c7ea2f0f842e6b29c799e9855c763 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f4298f204c05490f946f9b90eda1b52f);
+        
+    
+            L.control.fullscreen(
+                {"forceSeparateButton": false, "position": "topleft", "title": "Full Screen", "titleCancel": "Exit Full Screen"}
+            ).addTo(map_f4298f204c05490f946f9b90eda1b52f);
+        
+    
+            var options = {
+              position: "topleft",
+              draw: {},
+              edit: {},
+            }
+            // FeatureGroup is to store editable layers.
+            var drawnItems = new L.featureGroup().addTo(
+                map_f4298f204c05490f946f9b90eda1b52f
+            );
+            options.edit.featureGroup = drawnItems;
+            var draw_control_65c55e8366d44a349a0a219a4e08eb34 = new L.Control.Draw(
+                options
+            ).addTo( map_f4298f204c05490f946f9b90eda1b52f );
+            map_f4298f204c05490f946f9b90eda1b52f.on(L.Draw.Event.CREATED, function(e) {
+                var layer = e.layer,
+                    type = e.layerType;
+                var coords = JSON.stringify(layer.toGeoJSON());
+                layer.on('click', function() {
+                    alert(coords);
+                    console.log(coords);
+                });
+                drawnItems.addLayer(layer);
+             });
+            map_f4298f204c05490f946f9b90eda1b52f.on('draw:created', function(e) {
+                drawnItems.addLayer(e.layer);
+            });
+            
+        
+    
+            var measure_control_f30c0db693554770bfd7ac129bf82961 = new L.Control.Measure(
+                {"position": "bottomleft", "primaryAreaUnit": "sqmeters", "primaryLengthUnit": "meters", "secondaryAreaUnit": "acres", "secondaryLengthUnit": "miles"});
+            map_f4298f204c05490f946f9b90eda1b52f.addControl(measure_control_f30c0db693554770bfd7ac129bf82961);
+
+        
+    
+                var lat_lng_popup_d337e6ad3c1645e49974570f1ab249eb = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_d337e6ad3c1645e49974570f1ab249eb
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_f4298f204c05490f946f9b90eda1b52f);
+                    }
+                map_f4298f204c05490f946f9b90eda1b52f.on('click', latLngPop);
+            
+    
+            map_f4298f204c05490f946f9b90eda1b52f.fitBounds(
+                [[29.7452, -93.8833], [29.7452, -93.8833]],
+                {"maxZoom": 12}
+            );
+        
+    
+            var macro_element_5d577c528c3746328767b7601d633b3b = L.tileLayer.wms(
+                "https://www.fws.gov/wetlands/arcgis/services/Wetlands/MapServer/WMSServer?",
+                {"attribution": "FWS", "format": "image/png", "layers": "1", "styles": "", "transparent": true, "version": "1.1.1"}
+            ).addTo(map_f4298f204c05490f946f9b90eda1b52f);
+        
+    
+            var marker_2d786fa71d9841dfa55c4e55902fb2ce = L.marker(
+                [29.7541, -93.8739],
+                {}
+            ).addTo(map_f4298f204c05490f946f9b90eda1b52f);
+        
+    
+        var popup_169b9dbda6dd4cdb89c3c23f3e285c16 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1e2d7b4ebda046c4bd55d99e4cc10759 = $(`<div id="html_1e2d7b4ebda046c4bd55d99e4cc10759" style="width: 100.0%; height: 100.0%;">Sabine Pass LNG</div>`)[0];
+            popup_169b9dbda6dd4cdb89c3c23f3e285c16.setContent(html_1e2d7b4ebda046c4bd55d99e4cc10759);
+        
+
+        marker_2d786fa71d9841dfa55c4e55902fb2ce.bindPopup(popup_169b9dbda6dd4cdb89c3c23f3e285c16)
+        ;
+
+        
+    
+    
+            var layer_control_9a05fe1b1ee443398d6dd473b95deb2d = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_f49c7ea2f0f842e6b29c799e9855c763,
+                },
+                overlays :  {
+                    "FWS NWI Wetlands" : macro_element_5d577c528c3746328767b7601d633b3b,
+                },
+            };
+            L.control.layers(
+                layer_control_9a05fe1b1ee443398d6dd473b95deb2d.base_layers,
+                layer_control_9a05fe1b1ee443398d6dd473b95deb2d.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_f4298f204c05490f946f9b90eda1b52f);
+        
+    
+            var marker_cec01b3dd6ec4dd389693dd2adddaed9 = L.marker(
+                [29.7541, -93.8739],
+                {}
+            ).addTo(map_f4298f204c05490f946f9b90eda1b52f);
+        
+    
+        var popup_2b121cf42b3c450da476990cb5b29fb5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d5040496af024717ae3902a871a94a59 = $(`<div id="html_d5040496af024717ae3902a871a94a59" style="width: 100.0%; height: 100.0%;">Sabine Pass LNG</div>`)[0];
+            popup_2b121cf42b3c450da476990cb5b29fb5.setContent(html_d5040496af024717ae3902a871a94a59);
+        
+
+        marker_cec01b3dd6ec4dd389693dd2adddaed9.bindPopup(popup_2b121cf42b3c450da476990cb5b29fb5)
+        ;
+
+        
+    
+</script>
